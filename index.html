@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple calculator for basic arithmetic operations">
+  <title>Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="calculator">
+    <div class="display" id="display" aria-live="polite">0</div>
+
+    <div class="keypad">
+      <button class="key" data-value="7">7</button>
+      <button class="key" data-value="8">8</button>
+      <button class="key" data-value="9">9</button>
+      <button class="key operator" data-value="*" aria-label="Multiply">
+        <img src="images/multiply.svg" alt="" width="28" height="28">
+      </button>
+
+      <button class="key" data-value="4">4</button>
+      <button class="key" data-value="5">5</button>
+      <button class="key" data-value="6">6</button>
+      <button class="key operator" data-value="-" aria-label="Subtract">
+        <img src="images/minus.svg" alt="" width="28" height="28">
+      </button>
+
+      <button class="key" data-value="1">1</button>
+      <button class="key" data-value="2">2</button>
+      <button class="key" data-value="3">3</button>
+      <button class="key operator" data-value="+" aria-label="Add">
+        <img src="images/plus.svg" alt="" width="28" height="28">
+      </button>
+
+      <button class="key clear" id="clear" aria-label="Clear">CE</button>
+      <button class="key" data-value="0">0</button>
+      <button class="key equals" id="equals" aria-label="Equals">
+        <img src="images/equals.svg" alt="" width="28" height="28">
+      </button>
+      <button class="key operator" data-value="/" aria-label="Divide">
+        <img src="images/divide.svg" alt="" width="28" height="28">
+      </button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
